@@ -1,124 +1,92 @@
-# Freedom GPT
+# freedom gpt3
 
-![GitHub license](https://img.shields.io/badge/license-GNU-blue.svg)
 
-![GitHub release](https://img.shields.io/github/release/ohmplatform/freedom-gpt-electron-app.svg)
 
-![GitHub stars](https://img.shields.io/github/stars/ohmplatform/freedom-gpt-electron-app.svg)
+## Getting started
 
-![GitHub All Releases](https://img.shields.io/github/downloads/ohmplatform/freedom-gpt-electron-app/total.svg)
+To make it easy for you to get started with GitLab, here's a list of recommended next steps.
 
-# Join our Discord Community
+Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
 
-Join our Discord Server to get the latest updates and to interact with the community.
+## Add your files
 
-[![Discord](https://img.shields.io/badge/Discord-%235865F2.svg?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/h77wvJS4ga)
+- [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
+- [ ] [Add files using the command line](https://docs.gitlab.com/ee/gitlab-basics/add-file.html#add-a-file-using-the-command-line) or push an existing Git repository with the following command:
 
-## Introduction
-
-This is the repository for the Freedom GPT application. This application is built using
-[Electron](https://www.electronjs.org/) and [React](https://reactjs.org/). It is a desktop application that
-allows users to run alpaca models on their local machine.
-
-## Prerequisites
-
-- [Node.js](https://nodejs.org/en/download/)
-- [Yarn](https://classic.yarnpkg.com/en/docs/install/#windows-stable)
-- [Git](https://git-scm.com/downloads)
-
-# If you want to run the project
-
-```sh
-git clone --recursive https://github.com/ohmplatform/FreedomGPT.git freedom-gpt
-cd freedom-gpt
-yarn install
-yarn start:prod
+```
+cd existing_repo
+git remote add origin https://gitlab.com/ammar.hdaifeh/freedom-gpt3.git
+git branch -M main
+git push -uf origin main
 ```
 
-# If you want to contribute to the project
+## Integrate with your tools
 
-## Working with the repository
+- [ ] [Set up project integrations](https://gitlab.com/ammar.hdaifeh/freedom-gpt3/-/settings/integrations)
 
-```sh
-git clone --recursive https://github.com/ohmplatform/FreedomGPT.git freedom-gpt
-cd freedom-gpt
-yarn install
-```
+## Collaborate with your team
 
-# Building the llama.cpp library
+- [ ] [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
+- [ ] [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
+- [ ] [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
+- [ ] [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
+- [ ] [Set auto-merge](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html)
 
-## Building from Source (MacOS/Linux)
+## Test and Deploy
 
-```sh
-cd llama.cpp
-make
-```
+Use the built-in continuous integration in GitLab.
 
-## Building from Source (Windows)
+- [ ] [Get started with GitLab CI/CD](https://docs.gitlab.com/ee/ci/quick_start/index.html)
+- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing(SAST)](https://docs.gitlab.com/ee/user/application_security/sast/)
+- [ ] [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
+- [ ] [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/ee/user/clusters/agent/)
+- [ ] [Set up protected environments](https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
 
-- Download and install CMake: <https://cmake.org/download/>
-- Run the following commands one by one:
+***
 
-```ps1
-cd llama.cpp
-cmake .
-cmake --build . --config Release
-```
+# Editing this README
 
-- You should now have a `Release` folder with a `main.exe` file inside it. You can run this file to test the chat client.
+When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!). Thank you to [makeareadme.com](https://www.makeareadme.com/) for this template.
 
-## Changing the API URL
+## Suggestions for a good README
+Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
 
-We are using `http://localhost:8889` as the API URL, you can change it in the file
-`src/index.ts`
+## Name
+Choose a self-explaining name for your project.
 
-## Running the application
+## Description
+Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
 
-To run the application, run the following command in your terminal:
+## Badges
+On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
 
-```sh
-yarn start
+## Visuals
+Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
 
-⦻ Make sure you are in the root directory of the project.
-```
+## Installation
+Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
 
-## Dockerizing the application
+## Usage
+Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
 
-To run the docker image, run the following command in your terminal:
+## Support
+Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
 
-```sh
-docker pull freedomgpt/freedomgpt
-docker run -d -p 8889:8889 freedomgpt/freedomgpt
-```
+## Roadmap
+If you have ideas for releases in the future, it is a good idea to list them in the README.
 
-If you want to build the docker image yourself, run the following command in your terminal:
+## Contributing
+State if you are open to contributions and what your requirements are for accepting them.
 
-```sh
-docker build -t freedomgpt/freedomgpt .
+For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
 
-OR
+You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
 
-yarn docker
-```
+## Authors and acknowledgment
+Show your appreciation to those who have contributed to the project.
 
-## Working Video
+## License
+For open source projects, say how it is licensed.
 
-https://user-images.githubusercontent.com/54356944/233825525-d95accf3-a26b-4f37-8fc1-6e922f782a66.mov
-
-# Credits
-
-This project utilizes several open-source packages and libraries, without which this project would not have been possible:
-
-"llama.cpp" - C++ library. https://github.com/ggerganov/llama.cpp
-
-"LLAMA" by Facebook Research - a low-latency, large-scale approximate nearest neighbor search algorithm. https://github.com/facebookresearch/llama
-
-"Alpaca" by Stanford CRFM - a framework for understanding and improving the efficiency and robustness of algorithms. https://crfm.stanford.edu/2023/03/13/alpaca.html
-
-"alpaca-lora" by tloen - a Python library for working with LoRa radios and the Alpaca protocol. https://github.com/tloen/alpaca-lora
-
-We would like to express our gratitude to the developers of these packages and their contributors for making their work available to the public under open source licenses. Their contributions have enabled us to build a more robust and efficient project.
-
-# LICENSE
-
-See the <a href="/LICENSE"> LICENSE </a>file.
+## Project status
+If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
